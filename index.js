@@ -17,7 +17,7 @@ app.use(express.json());
 
 app.post('/api/products', products_controller.create);
 app.get('/api/products', products_controller.getAll);
-app.get('/api/products/:id', products_controller.getOne);
+app.get('/api/product/:id', products_controller.getOne);
 app.put('/api/products/:id', products_controller.update);
 app.delete('/api/products/:id', products_controller.delete);
 
